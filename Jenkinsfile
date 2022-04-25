@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE_NAME = "docker pull ashikansal/infrabootcamp-meta-app"
+        DOCKER_IMAGE_NAME = "ashikansal/infrabootcamp-meta-app"
         DOCKER_USERNAME = "e896hnjytjcewm3syfsb"
         DOCKER_PASSWORD = credentials('DOCKER_PW')
     }
