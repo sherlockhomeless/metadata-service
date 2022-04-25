@@ -18,7 +18,6 @@ pipeline {
             steps {
                 sh '''
                     echo "building the docker image ......."
-                    ls
                     docker build -t "${DOCKER_IMAGE_NAME}" .
                 '''
             }
