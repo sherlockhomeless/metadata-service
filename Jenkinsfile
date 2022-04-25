@@ -18,6 +18,7 @@ pipeline {
             steps {
                 sh '''
                     echo "building the docker image ......."
+                    which docker
                     docker build -t "${DOCKER_IMAGE_NAME}" .
                 '''
             }
